@@ -1,0 +1,34 @@
+<table>
+<caption>
+<thead> - выделение заголовков таблицы(столбцов/строк) хэдэр таблицы (необязательно)
+<tr>  строка
+<th> столбец
+<tfoot> футер таблицы (необязательно)
+<tbody> тело таблицы (необязательно)
+<form action="handles.php" method="get"("post") name "feedback">
+<select size> 			выпадающий список
+	<optgroup> 		группа вариантов
+		<option> 	варианты 
+	</optgroup>
+</select>
+
+<fieldset>Текстовое поле 
+	<legend> Название .
+	
+	<iframe src="http://ukr.net" width="640" height="480"> Окно со ссылкой
+		</iframe>
+		
+		
+		<table style="width:250px;">
+			<caption>Таблица 2</caption>
+			<tr>
+				<td colspan=2 style="outline: 1px solid red">Title</td>
+			</tr>
+			<tr>
+				<td rowspan=2 style="outline: 1px solid red">1</td>
+				<td style="outline: 1px solid red">1</td>
+			</tr>
+			<tr>
+				<td style="outline: 1px solid red">3</td>
+			</tr>
+		</table>
