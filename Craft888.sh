@@ -5,4 +5,4 @@ cd brainacad
 git init
 git fetch
 git branch workaround origin/workaround
-"c:\Program Files\Git\bin\sh.exe" --login -i"
+"c:\Program Files\Git\bin\sh.exe" --login -i
