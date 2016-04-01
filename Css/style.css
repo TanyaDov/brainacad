@@ -1,0 +1,58 @@
+/*div{
+	outline:1px solid red;
+}*/
+
+.wrapper{
+	width: 768px;
+	background: #1200ff;
+	margin: 0 auto;
+}
+
+.header{
+	background:#d7d7d7;
+	height: 100px;
+}
+
+.logo{
+	display:inline-block;
+	background:#7d7d7d;
+	height:70px;
+	width:190px;
+	text-align:center;
+}
+
+#slider, #info{
+	height: 400px;
+	background: #e2e2e2;
+	color:#363636;
+}
+
+#catalog, #contact{
+	background: #363636;
+	color:#e2e2e2;
+}
+
+#footer{
+	height: 200px;
+	background: #e2e2e2;
+	color:#363636;
+}
+
+#catalog td{
+/*	border: 1px solid red; */
+	width:20px;
+	text-align:center;
+	background: #4b4b4b;
+	font-size: 14px;
+	
+}
+
+#catalog td:first-child{
+/*	border: 1px solid red; */
+	text-align:left;
+	width:400px;
+}
+
+#contact form{
+	 width:350px; 
+}
