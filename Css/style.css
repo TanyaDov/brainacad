@@ -26,6 +26,43 @@
 	background: #e2e2e2;
 	color:#363636;
 }
+.slide a{
+	display:inline-block;
+	text-decoration:none;
+	text-align:center;
+}
+
+.slide{
+	text-align:center;
+}
+
+.slide .item img{
+	width:150px;
+}
+
+.slide .item .label{
+	color:#363636;
+}
+.pagination{
+	text-align:center;
+}
+
+.pagination .item{
+	display:inline-block;
+	background: url("../img/sprite2.png") -16px 0px no-repeat;
+	width: 15px;
+	height: 15px;
+}
+
+
+
+
+
+
+
+
+
+
 
 #catalog, #contact{
 	background: #363636;
