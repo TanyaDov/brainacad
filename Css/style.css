@@ -5,21 +5,27 @@
 .wrapper{
 	width: 768px;
 	background: #1200ff;
+	background: white;
 	margin: 0 auto;
 }
 
 .header{
 	background:#d7d7d7;
 	height: 100px;
+	font-variant:small-caps;
 }
 
 .logo{
 	display:inline-block;
 	background:#7d7d7d;
-	height:70px;
+	height:65px;
 	width:190px;
 	text-align:center;
+	/*vertical-align:middle;*/
+	margin:15px 10px 0px 10px;
+
 }
+
 
 #slider, #info{
 	height: 400px;
@@ -56,3 +62,23 @@
 #contact form{
 	 width:350px; 
 }
+/*________________LIST STYLE*/
+.list{
+	width:200px;
+}
+ul{
+	list-style-position: inside;
+	list-style-image: url("../img/v.png")
+	
+}
+
+ul li:first-child{
+	list-style-position: outside;
+	list-style-image: url("../img/v.png")
+	
+}
+
+
+
+
+
