@@ -77,6 +77,29 @@ ul li:first-child{
 	list-style-image: url("../img/v.png")
 	
 }
+/*____________BLOCKS_______________*/
+
+.parentblock{
+	border: 1px solid black;
+}
+.someblock{
+	width: 400px;
+	height: 400px;
+	background: green;
+	padding-left:50px;
+	margin-left:50px;
+	border: 10px solid red;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
