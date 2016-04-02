@@ -22,18 +22,25 @@
 }
 
 #slider, #info{
-	height: 400px;
 	background: #e2e2e2;
 	color:#363636;
 }
-.slide a{
-	display:inline-block;
+
+#slider p{
+	margin: 0px 20px 10px 20px;
+	text-align:justify;
+}
+.slide .item{
+	display:block;
 	text-decoration:none;
 	text-align:center;
+	width:150px;
+	float:left;
 }
 
 .slide{
 	text-align:center;
+	border:1px solid red;
 }
 
 .slide .item img{
@@ -52,8 +59,12 @@
 	background: url("../img/sprite2.png") -16px 0px no-repeat;
 	width: 15px;
 	height: 15px;
+	margin-top:10px;
 }
 
+.clearfix{
+	clear:both;
+}
 
 
 
