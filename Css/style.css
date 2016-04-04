@@ -212,12 +212,43 @@ color:#e2e2e2;
 	width:330px;
 	font-size: 14px;
 }
+
+.contact_form p{
+	margin:5px 0;
+}
+
 .contact_form h3{
 	margin:0px;
 }
+
+.contact_form .text_container{
+	display:block;
+	margin:5px 0;
+}
+
+.contact_form input[type="text"]{
+	display:block;
+	float:right;
+	width:200px;
+}
+.contact_form textarea{
+	display:block;
+	width:300px;
+}
+
+.contact_form input[type="submit"], .contact_form input[type="reset"]{
+	margin:5px 0px 0 5px;
+	display:block;
+	float:right;
+}
+
 .contact_image{
 	float:right;
 }
+
+
+
+
 
 
 #footer{

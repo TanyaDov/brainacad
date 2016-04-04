@@ -169,32 +169,34 @@
 					<form>
 						<p>Здесь вы можете отправить нам сообщение</p>
 						<hr>
-						<div>
-							<label>Ваше имя:<input type="textarea" placeholder="имя"></label>
+						<div class="text_container">
+							<label>Ваше имя:<input type="text" placeholder="имя"></label>
+							<div class="clearfix"></div>
+						</div>
+						<div class="text_container">
+							<label>Ваш E-MAIL:<input type="text" placeholder="e-mail"></label>
+							<div class="clearfix"></div>
 						</div>
 						
-						<div>
-							<label>Ваш E-MAIL:<input type="textarea" placeholder="e-mail"></label>
-						</div>
 						<hr>
 						<p>Выберите тему письма и нажмите отправить</p>
 						<div>
 							Тема письма
 								<select>
-									<optgroup label=" - Выбрать тему - "> 
-										<option>Тема1</option>
-										<option>Тема2</option>
-										<option>Тема3</option>
-									</optgroup>
+									<option disabled="disabled" selected="selected">- Выбрать тему -</option>
+									<option>Тема1</option>
+									<option>Тема2</option>
+									<option>Тема3</option>
 								</select>
 						</div>
 						<div>
-							<label>Сообщение:<textarea></textarea></label>
+							<label>Сообщение:<textarea rows=4></textarea></label>
 						</div>
 						<p>Введите капчу и нажмите отправить.</p>
 						<hr>
 						<div>9+18=<input type="text"></div>
-						<input type="submit" value="Отправить"> </input>
+						<div class="clearfix"></div>
+						<input type="submit" value="Отправить"></input>
 						<input type="reset" value="Сбросить"></input>
 					</form>
 				</fieldset>
