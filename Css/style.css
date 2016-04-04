@@ -2,6 +2,11 @@
 	outline:1px solid red;
 }*/
 
+body{
+	background:url("../img/bck.png") repeat;
+	background-attachment:fixed;
+}
+
 h2{
 	margin:0px 0px 15px 0px;
 	text-align:center;
@@ -12,6 +17,7 @@ h2{
 	width: 768px;
 	background: #1200ff;
 	margin: 0 auto;
+	box-shadow: 10px 0px 20px rgba(0,0,0,0.5);
 	
 }
 .promo{
@@ -171,6 +177,7 @@ color:#e2e2e2;
 	text-align:center;
 	background: #4b4b4b;
 	font-size: 14px;
+	padding:3px;
 	
 }
 
@@ -187,13 +194,14 @@ color:#e2e2e2;
 	color:#e2e2e2;
 	text-decoration:none;
 	width:20px;
+	padding:2px;
 }
 
 .image_container{
 	display:block;
 	float:right;
-	width:200px;
-	height:200px;
+	width:250px;
+	height:250px;
 	background: #4b4b4b;
 }
 
