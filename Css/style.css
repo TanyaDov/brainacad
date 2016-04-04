@@ -10,7 +10,6 @@ h2 {
 
 .wrapper {
 	width : 768px;
-	background : #1200ff;
 	margin : 0 auto;
 	box-shadow: 10px 0px 20px rgb(0,0,0);
 }
@@ -202,6 +201,7 @@ h2 {
 	float : left;
 	width : 330px;
 	font-size : 14px;
+	box-shadow: 2px 2px 5px rgb(0,0,0)
 }
 
 .contact_form p {
