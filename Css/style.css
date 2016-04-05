@@ -336,7 +336,7 @@ right:-30px;
 	top : 50%;
 	width : 40px;
 	height : 200px;
-	background : #001fa7;
+	background : url("../img/adm.png") #001fa7;
 	margin-top : -100px;
 	left : 0px;
 }	
