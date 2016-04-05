@@ -301,85 +301,120 @@ right:-30px;
 	top:4px;
 }
 
-.social .facebook {
+.social a{
 	display : inline-block;
-	background : url("../img/social.png") no-repeat 0 0;
 	width : 50px;
-	height : 50px;
+	height : 51px;
+}
+
+.social .facebook {
+	background : url("../img/social.png") no-repeat 0 -1px;
 }
 
 .social .twitter {
-	display : inline-block;
-	background : url("../img/social.png") no-repeat -50px 0;
-	width : 50px;
-	height : 50px;
+	background : url("../img/social.png") no-repeat -50px -1px;
 }
 
 .social .google {
-	display : inline-block;
-	background : url("../img/social.png") no-repeat -100px 0;
-	width : 50px;
-	height : 50px;
+	background : url("../img/social.png") no-repeat -100px -1px;
 }
 
 .social .facebook:hover {
-	display : inline-block;
-	background : url("../img/social.png") no-repeat 0 -50px;
-	width : 50px;
-	height : 50px;
+	background : url("../img/social.png") no-repeat 0 -51px;
 }
 
 .social .twitter:hover {
-	display : inline-block;
-	background : url("../img/social.png") no-repeat -50px -50px;
-	width : 50px;
-	height : 50px;
+	background : url("../img/social.png") no-repeat -50px -51px;
 }
 
 .social .google:hover {
-	display : inline-block;
-	background : url("../img/social.png") no-repeat -100px -50px;
-	width : 50px;
-	height : 50px;
+	background : url("../img/social.png") no-repeat -100px -51px;
 }
 
-.panel{
-	position:fixed;
-	top:50%;
-	width:40px;
-	height:200px;
-	background:#001fa7;
-	margin-top:-150px;
-	left:0px;
-	color:white;
-	left:400px;
+.panel {
+	position : fixed;
+	top : 50%;
+	width : 40px;
+	height : 200px;
+	background : #001fa7;
+	margin-top : -100px;
+	left : 0px;
 }	
 
 
-.admin_Content{
-	height:400px;
-	width:400px;
-	background:red;
-	position:absolute;
-	right:40px;
-	margin-top:-100px; 
+.admin_Content {
+	height : 400px;
+	width : 400px;
+	background : red;
+	position : absolute;
+	right : 40px;
+	margin-top : -100px;
 }
 
 .panel:hover{
-	left:400px;
+	left : 400px;
+	transition-duration:1s;
 }
 
-.discount_form .adm_date{
-
+.discount_form{
+	margin:10px;
 }
 
-.discount_form .adm_date .date{
+.justifier{
+	text-align:justify;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.date{
 	width:100px;
-		text-align:center;
-
+    display: inline-block;
 }
 
 .discount_form .adm_button{
 	width:100%;
 }
+/*	
+.admin_label{
+	transform: rotate(90deg);
+	position : fixed;
+	display:inline-block;
+	top : 50%;
+	color : white;
+	outline:1px solid white;
+}
+*/
 
+
+/*
+.date{
+	position:absolute;
+	display:block;
+	width:100px;
+}
+.discount_form .date:nth-child(1){
+	left:0px;
+	margin-right:-10px;
+}
+
+.discount_form .date:nth-child(2){
+	left:50%;
+	margin-left:-52px;
+}
+
+.discount_form .date:nth-child(3){
+	right:0px;
+	margin-left:-10px;
+}
+
+.discount_form .adm_button{
+	width:100%;
+	margin-top:40px;
+}
+
+*/
