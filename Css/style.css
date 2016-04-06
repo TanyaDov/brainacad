@@ -8,7 +8,7 @@ h2 {
 	text-align : center;
 }
 
-/*фиксы, указатели, выравнивание*/
+/*fixes pointers justifier*/
 
 .pointer{
 	cursor:pointer;
@@ -175,37 +175,13 @@ right:15px;
 
 .pagination .item {
 	display : inline-block;
-	background : url("../img/sprite21.png") no-repeat -128px -240px;
+	background : url("../img/sprite21.png") no-repeat -129px -240px;
 	width : 15px;
 	height : 15px;
 	margin-top : 5px;
 }
 .pagination .item:hover{
 	background : url("../img/sprite21.png") no-repeat 0px 0px;
-}
-
-/*---------------------------------INFO-------------------------------*/
-
-.info {
-	background : #e2e2e2;
-	color : #363636;
-}
-
-.info p {
-	color : #363636;
-	text-align : justify;
-}
-
-.leftimg {
-	float : left;
-	margin : 0 5px 0 0;
-	width : 150px;
-}
-
-.rightimg {
-	float : right;
-	margin : 0 0 0 5px;
-	width : 150px;
 }
 
 /*--------------------------------CATALOG-----------------------------*/
@@ -227,13 +203,15 @@ right:15px;
 	background : #4b4b4b;
 	font-size : 14px;
 	padding : 3px;
-	cursor:pointer;
 }
 
 .catalog_table td:first-child {
 	text-align : left;
 	width : 400px;
-	cursor:default;
+}
+
+.table_pages {
+	margin-left : 2px;
 }
 
 .table_pages span {
@@ -245,7 +223,11 @@ right:15px;
 	text-decoration : none;
 	width : 20px;
 	padding : 2px;
-	margin-top:5px;
+	margin-top : 5px;
+}
+
+.table_pages .active {
+	background : #7b7b7b;
 }
 
 .image_container {
@@ -254,6 +236,33 @@ right:15px;
 	width : 250px;
 	height : 250px;
 	background : #4b4b4b;
+}
+
+/*---------------------------------INFO-------------------------------*/
+
+.info {
+	background : #e2e2e2;
+	color : #363636;
+	text-align : justify;
+}
+
+.leftimg {
+	float : left;
+	margin : 0 5px 0 0;
+	width : 150px;
+}
+
+.rightimg {
+	float : right;
+	margin : 0 0 0 5px;
+	width : 150px;
+}
+
+.rightimg img {
+	width : 45px;
+}
+.rightimg > img {
+	width : 150px;
 }
 
 /*--------------------------------CONTACT-----------------------------*/
@@ -316,8 +325,9 @@ right:15px;
 
 .contact_form textarea {
 	display : block;
-	width : 310px;
+	width : 314px;
 	margin-bottom:5px;
+	resize:none;
 }
 
 .contact_form input[type="submit"], .contact_form input[type="reset"] {
@@ -327,26 +337,38 @@ right:15px;
 }
 
 .captcha {
-	text-align:center;
-	border-top:2px solid #e2e2e2;
+	text-align : center;
+	border-top : 2px solid #e2e2e2;
+	margin-left : 5px;
+}
+.captcha label {
+	letter-spacing : 5px;
+	font-weight : bold;
 }
 
-.captcha input[type="text"]{
-	display:inline;
-	clear:both;
-	width:200px;
-	float:none;
+.captcha input[type="text"] {
+	display : inline-block;
+	clear : both;
+	width : 200px;
+	float : none;
+	margin-left : 5px;
 }
 
 .buttons_container{
-	text-align:center;
+	text-align : center;
+}
+
+.buttons_container input[type="reset"], .buttons_container input[type="submit"] {
+	border : none;
 }
 
 .contact_image {
 	float : right;
-	width:300px;
-	margin-top:30px;
+	width : 300px;
+	margin-top : 30px;
 }
+
+
 
 /*-------------------------------FOOTER-----------------------------*/
 
@@ -426,7 +448,7 @@ right:15px;
 	background : url("../img/adm.png") #001fa7;
 	margin-top : -100px;
 	left : 0px;
-	opacity:0.9;
+	opacity:0.97;
 	transition-duration:0.5s;
 }	
 
