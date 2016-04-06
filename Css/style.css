@@ -83,6 +83,7 @@ h2 {
 	text-decoration : none;
 	font-weight : bold;
 	padding : 20px 20px 20px 20px;
+
 }
 
 .anchors_header a:hover {
@@ -413,6 +414,9 @@ right:15px;
 .social .google:hover {
 	background : url("../img/social.png") no-repeat -100px -51px;
 }
+
+/*-----------------------------ADMIN PANEL---------------------------*/
+
 
 .panel {
 	position : fixed;
