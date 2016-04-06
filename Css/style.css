@@ -426,16 +426,19 @@ right:15px;
 	background : url("../img/adm.png") #001fa7;
 	margin-top : -100px;
 	left : 0px;
-}	
+	opacity:0.9;
 
+
+}	
 
 .admin_Content {
 	height : 400px;
 	width : 400px;
-	background : red;
+	background : url("../img/bck.png") repeat;
 	position : absolute;
 	right : 40px;
 	margin-top : -100px;
+	box-shadow: 0px 0px 20px rgb(0,0,0);
 }
 
 .panel:hover{
@@ -456,18 +459,10 @@ right:15px;
 	width:100%;
 }
 
-
-
-/*	
-.admin_label{
-	transform: rotate(90deg);
-	position : fixed;
-	display:inline-block;
-	top : 50%;
-	color : white;
-	outline:1px solid white;
+.discount_form legend{
+	color:white;
+	font-weight:bold;
 }
-*/
 
 
 /*
