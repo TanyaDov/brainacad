@@ -46,8 +46,7 @@ h2 {
 
 .header {
 	background : #2e2e2e;
-	position:relative;
-
+	position : relative;
 }
 
 .logo {
@@ -72,7 +71,7 @@ h2 {
 
 .anchors_header {
 	display : block;
-	text-align:right;	
+	text-align:right;
 }
 
 .anchors_header a {
@@ -83,6 +82,7 @@ h2 {
 	font-weight : bold;
 	padding : 20px;
 	margin-left:-4px;
+	transition:background-color .2s ease-in-out;
 }
 
 .anchors_header a:hover {
@@ -257,12 +257,15 @@ right:15px;
 	margin : 0 0 0 5px;
 	width : 150px;
 }
+.rightimg .justifier{
+	margin-top:5px;
+}
 
 .rightimg img {
-	width : 45px;
+	width : 30%;
 }
 .rightimg > img {
-	width : 150px;
+	width : 100%;
 }
 
 /*--------------------------------CONTACT-----------------------------*/
@@ -339,7 +342,7 @@ right:15px;
 .captcha {
 	text-align : center;
 	border-top : 2px solid #e2e2e2;
-	margin-left : 5px;
+	padding-left : 5px;
 }
 .captcha label {
 	letter-spacing : 5px;
@@ -392,6 +395,7 @@ right:15px;
 	font-weight : bold;
 	padding : 20px;
 	margin-left:-4px;
+	transition:background-color .2s ease-in-out, color .2s ease-in-out;;
 
 }
 
@@ -464,7 +468,7 @@ right:15px;
 
 .panel:hover{
 	left : 400px;
-	transition-duration:0.5s;
+
 }
 
 .discount_form{
