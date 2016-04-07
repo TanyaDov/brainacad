@@ -91,7 +91,23 @@ ul li:first-child{
 	border: 10px solid red;
 }
 
+.test-image {
+	opacity:0.5;
+}
 
+.new_property_test{
+	overflow:auto;
+	box-shadow: 5px 5px 5px black;
+	text-shadow: 1px 1px 2px black;
+	border:1px black;
+	background:repeating-linear-gradient(45deg, red, blue 150px);
+	transform:translate(30px,0px);
+	transform:skew:
+}
+
+div {
+	outline:1px solid red;
+}
 
 
 
