@@ -19,7 +19,7 @@ body {
     width: 50px;
     height: 50px;
     overflow: hidden;
-    transition: width .2s ease-in-out, height .2s ease-in-out .2s;
+    transition: width .2s ease-in-out, height .2s ease-in-out .5s;
 }
 .nav li:hover {
 	width: 200px;
@@ -37,7 +37,7 @@ body {
     cursor: pointer;
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
-    -0-transition: all .2s ease-in-out;
+    -O-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 .nav li a:hover { 
