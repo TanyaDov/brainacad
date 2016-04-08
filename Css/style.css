@@ -256,17 +256,68 @@ right:15px;
 	float : right;
 	margin : 0 0 0 5px;
 	width : 150px;
+	height: 200px;
+	position:relative;
 }
 .rightimg .justifier{
 	margin-top:5px;
 }
 
-.rightimg img {
-	width : 30%;
+	
+.bck{
+	background: yellow;
+	height:150px;
+	width:150px;
+	position:absolute;
+	top:0;
+	margin-top:-10px;
 }
-.rightimg > img {
-	width : 100%;
+
+.big{
+	position:absolute;
+	top:-156px;
+	text-align:center;
 }
+
+.big img{
+	width:150px;
+	height:150px;
+
+}
+
+.pic1, .pic2, .pic3{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	background:green;
+	position:relative;
+	margin-top:141px;
+	overflow:hidden;
+	transition:all .1s ease-in-out;
+}
+
+.pic1>img, .pic2>img, .pic3>img{
+	width:40px;
+	height:40px;
+}
+
+.pic1:hover, .pic2:hover, .pic3:hover{
+	overflow:visible;
+}
+
+.pic1 .big{
+	left:0;
+}
+
+.pic2 .big{
+	left:50%;
+	margin-left:-74px;
+}
+
+.pic3 .big{
+	right:-1px;
+}
+
 
 /*--------------------------------CONTACT-----------------------------*/
 
