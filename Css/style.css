@@ -105,13 +105,74 @@ ul li:first-child{
 	transform:skew:
 }
 
-div {
-	outline:1px solid red;
+
+.justifier{
+	text-align:justify;
+}
+
+.stretch{
+	width:100%;
+	display:inline-block;
+	font-size:0;
+	line-height:0;
+}
+
+.parent{
+	width:350px;
+	height:350px;
+	position:relative;
+}
+
+.pic1, .pic2, .pic3{
+	display:inline-block;
+	width:100px;
+	height:100px;
+	background:green;
+	position:relative;
+	margin-top:251px;
+	overflow:hidden;
+	transition:all .1s ease-in-out;
+	}
+
+.pic1:hover, .pic2:hover, .pic3:hover{
+	overflow:visible;
 }
 
 
+	
+.bck{
+	background: yellow;
+	height:250px;
+	width:350px;
+	position:absolute;
+	top:0;
+	margin-top:-10px;
+}
 
+.big{
+	position:absolute;
+	height:250px;
+	width:350px;
+	top:-260px;
+}
 
+.pic1 .big{
+	left:0;
+	background:green;
+}
+
+.pic2 .big{
+	left:50%;
+	margin-left:-175px;
+
+	background:blue;
+}
+
+.pic3 .big{
+	right:0;
+	background:black;
+
+}
 
 
 
