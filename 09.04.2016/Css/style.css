@@ -1,0 +1,125 @@
+div,main,header,aside,section,footer{
+	outline:1px solid red;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	height:100%;
+}
+
+
+h2{
+	margin:0;
+}
+
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.clearfix{
+	clear:both;
+}
+
+
+.wrapper{
+	position:relative;
+	width: 800px;
+	background: #f5f5f5;
+	margin: 0 auto;
+	height:100%;
+	margin:0px auto;
+}
+
+header{
+	height:17%;
+	background:#18202b;
+}
+
+.viewinbrowser{
+  height: 26px;
+}
+
+.featured{
+	height:62%;
+	background:#1e2735;
+	padding:0 70px;
+
+}
+
+.featured h2{
+	color: white;
+}
+
+.main_aside{
+	top:50%;
+	bottom:1%;
+	left:70px;
+	background:white;
+	overflow-y: scroll;
+	height:70%;
+	position:absolute;
+	display:none;
+}
+
+main{
+    height: 100%;
+    width: 415px;
+	float:left;
+}
+
+section{
+	margin:5px;
+}
+
+.section1{
+	height:225px;
+}
+.section1 .left{
+	width:55%;
+}
+
+.section1 .right{
+	width:35%;
+}
+.section2{
+	height:100px;
+}
+.section3{
+	height:100px;
+}
+
+
+aside{
+    height: 825px;
+    width: 228px;
+	float:right;
+}
+
+footer{
+	background:#1e2735;
+	height:30%;
+}
+
+.footer_bot {
+	height: 75px;
+	background:#121821;
+}
+
+.logo{
+	height:125px;
+	float:left;
+}
+
+.social{
+	float:right;
+}
+
+
