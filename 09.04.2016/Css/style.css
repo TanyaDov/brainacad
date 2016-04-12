@@ -1,6 +1,4 @@
-div,main,header,aside,section,footer{
-	outline:1px solid red;
-}
+
 
 html{
 	height:100%;
@@ -33,40 +31,80 @@ h2{
 	position:relative;
 	width: 800px;
 	background: #f5f5f5;
-	margin: 0 auto;
 	height:100%;
-	margin:0px auto;
+	margin:0px 5px;
 }
 
+/*-------------------------HEADER-------------------------*/
+
 header{
-	height:17%;
-	background:#18202b;
+    height: 12.5%;
+    background: #18202b;
+	position:relative;
 }
 
 .viewinbrowser{
-  height: 26px;
+    height: 26px;
+    background: #141B27;
+	position:absolute;
+	top:0;
+	width:100%;
 }
 
+/*-------------------------FEATURED-------------------------*/
+
 .featured{
-	height:62%;
+	height:44.5%;
 	background:#1e2735;
 	padding:0 70px;
-
 }
 
 .featured h2{
 	color: white;
 }
 
-.main_aside{
-	top:50%;
-	bottom:1%;
-	left:70px;
+/*-------------------------WHITEBG-------------------------*/
+.white_bg{
+	height: 22%; 
 	background:white;
-	overflow-y: scroll;
-	height:70%;
+}
+
+
+/*-------------------------FOOTER-------------------------*/
+footer{
+	background:#1e2735;
+	height:21%;
+	position:relative;
+}
+
+.footer_bot {
+	height: 75px;
+	background:#121821;
 	position:absolute;
-	display:none;
+	bottom:0;
+	width:100%;
+}
+
+.logo{
+	height:125px;
+	width:40%;
+}
+.social{
+	height:125px;
+	width:40%;
+}
+
+/*---------------------------MAIN_ASIDE-----------------------*/
+
+.main_aside{
+    background: white;
+    overflow-y: scroll;
+    height: 45%;
+    position: absolute;
+    box-shadow: 0px 8px 21px -10px #000000;
+    z-index: 1;
+    top: 40%;
+    margin-left: 70px;
 }
 
 main{
@@ -75,51 +113,37 @@ main{
 	float:left;
 }
 
-section{
-	margin:5px;
+main section{
+	margin: 25px 10px 25px 20px;
 }
 
 .section1{
-	height:225px;
+	height: 225px;
+
 }
 .section1 .left{
-	width:55%;
+	width: 200px;
+	font-size: 12px;
 }
 
 .section1 .right{
-	width:35%;
+    width: 163px;
+    height: 142px;
+    background: grey;
+    margin-right: 7px;
 }
-.section2{
-	height:100px;
-}
-.section3{
-	height:100px;
-}
+
 
 
 aside{
-    height: 825px;
-    width: 228px;
+    height:100%;
+	width: 228px;
 	float:right;
 }
 
-footer{
-	background:#1e2735;
-	height:30%;
-}
-
-.footer_bot {
-	height: 75px;
-	background:#121821;
-}
-
-.logo{
-	height:125px;
-	float:left;
-}
-
-.social{
-	float:right;
+aside section{
+	margin: 25px 20px 25px 10px;
+	font-size: 12px;
 }
 
 
