@@ -583,15 +583,31 @@ right:15px;
 	background:white;
 	width:800px;
 	top:50%;
-	transform:translateY(-50%);
-	/*left:50%;
-	margin-left:-250px;*/
+	transform:translateY(-50%) translateX(-50%);
+	left:50%;
 	position:fixed;
+	padding:20px;
+}
+
+.overlay .some_list{
+	float:left;
+	
+}
+
+.overlay .some_list ul{
+	list-style:none;
+	margin:0;
+	padding:10px;
+}
+
+.overlay .some_list input[type="radio"]{
+	margin: 0 10px;
 }
 
 .overlay .timer{
-	margin-top:40px;
+	padding:10px;
 	float:right;
+	
 }
 
 .overlay span{
@@ -608,11 +624,6 @@ right:15px;
     border-radius: 5px;
     padding: 10px;
     box-shadow: inset 0px 0px 15px 1px;
-
-}
-
-.overlay .timer .twodots{
-padding: 10px;
 }
 
 .overlay .timer .numbers:before{
@@ -625,3 +636,5 @@ padding: 10px;
 	height:2px;
 	background:white;
 }
+
+
