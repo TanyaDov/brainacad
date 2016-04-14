@@ -1,0 +1,66 @@
+$header_color: red;
+$amount: 50%;
+$red : lighten(red, 30%);
+$green: lighten(green, 50%);
+$yellow: lighten(yellow, 30%);
+$blue: blue;
+
+
+body{
+	text-align:center;
+}
+
+h1 {
+	color: $header_color;
+}
+
+.menu{
+	.list{
+		color: $blue;
+		margin:0;
+		&:hover{
+			color: lighten($blue, 40%);
+		}
+	}
+}
+
+.return{
+	background: $red;
+	border: 1px solid darken($red, $amount);
+	color: darken($red, $amount);
+	font-size:20px;
+	padding:20px;
+	box-shadow: 3px 3px 10px 1px black;
+	&:hover{
+		background: lighten($red, 15%);
+	}
+}
+
+.cancel{
+	background: $yellow;
+	@extend .return;
+/*	border: 1px solid darken($yellow, $amount);
+	color: darken($yellow, $amount);
+	&:hover{
+		background: lighten($yellow, 15%);
+	}*/
+}
+
+.save{
+	background: $green;
+	@extend .return;
+	/*border: 1px solid darken($green, $amount);
+	color: darken($green, $amount);
+	&:hover{
+		background: lighten($green, 15%);
+	}*/
+}
+
+
+
+
+input[type="button"]{
+	display:inline-block;
+	width:200px;
+	border-radius:5px;
+}

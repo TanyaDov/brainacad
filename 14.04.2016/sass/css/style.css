@@ -1,0 +1,60 @@
+/* line 9, ../sass/_mainstyle.scss */
+body {
+  text-align: center;
+}
+
+/* line 13, ../sass/_mainstyle.scss */
+h1 {
+  color: red;
+}
+
+/* line 18, ../sass/_mainstyle.scss */
+.menu .list {
+  color: blue;
+  margin: 0;
+}
+/* line 21, ../sass/_mainstyle.scss */
+.menu .list:hover {
+  color: #ccccff;
+}
+
+/* line 27, ../sass/_mainstyle.scss */
+.return, .cancel, .save {
+  background: #ff9999;
+  border: 1px solid #990000;
+  color: #990000;
+  font-size: 20px;
+  padding: 20px;
+  box-shadow: 3px 3px 10px 1px black;
+}
+/* line 34, ../sass/_mainstyle.scss */
+.return:hover, .cancel:hover, .save:hover {
+  background: #ffe6e6;
+}
+
+/* line 39, ../sass/_mainstyle.scss */
+.cancel {
+  background: #ffff99;
+  /*	border: 1px solid darken($yellow, $amount);
+  	color: darken($yellow, $amount);
+  	&:hover{
+  		background: lighten($yellow, 15%);
+  	}*/
+}
+
+/* line 49, ../sass/_mainstyle.scss */
+.save {
+  background: #80ff80;
+  /*border: 1px solid darken($green, $amount);
+  color: darken($green, $amount);
+  &:hover{
+  	background: lighten($green, 15%);
+  }*/
+}
+
+/* line 62, ../sass/_mainstyle.scss */
+input[type="button"] {
+  display: inline-block;
+  width: 200px;
+  border-radius: 5px;
+}
