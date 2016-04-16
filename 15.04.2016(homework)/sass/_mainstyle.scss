@@ -42,15 +42,15 @@ header{
 	background:linear-gradient(to top, $h_bck, lighten($h_bck, 10%));
 	padding:0 10px;
 	.menu{
-	display:block;
-    padding: 13px 17px;
-	font-size:14px;
-	color:$h_fnt;
-	text-decoration:none;
-	transition:all 0.3s ease-out 0.05s;
-	&:hover{
-		color:lighten($h_fnt, 30%);
-		background:darken($h_bck, 30%);
+		display:block;
+		padding: 13px 17px;
+		font-size:14px;
+		color:$h_fnt;
+		text-decoration:none;
+		transition:all 0.3s ease-out 0.05s;
+		&:hover{
+			color:lighten($h_fnt, 30%);
+			background:darken($h_bck, 30%);
 		}
 	}
 	.project_name{
@@ -86,7 +86,7 @@ aside{
 		color:$btn_color;
 		text-decoration:none;
 		padding:5px 15px;
-		&.active{
+		&:hover{
 			color:$sb_bck;
 			background:$btn_color;
 		}
@@ -102,19 +102,27 @@ main{
 		padding:50px;
 		border-radius:5px;
 		h1{
-		margin:0;
-		font-size:50px;
+			margin:0;
+			font-size:50px;
 		}
 		p{
-		font-size:18px;
-		line-height:30px;
+			font-size:18px;
+			line-height:30px;
 		}
 		button{
-		background:linear-gradient(to top, $btn_color, lighten($btn_color, 10%));
-		border:1px solid darken($btn_color, 5%);
-		border-radius:5px;
-		padding:10px;
-		color:white;
+			background:linear-gradient(to top, $btn_color, lighten($btn_color, 10%));
+			border:1px solid darken($btn_color, 5%);
+			border-radius:5px;
+			padding:10px;
+			color:white;
+			box-shadow:1px 1px 5px 0px black;
+			&:hover{
+				background:linear-gradient(to top,lighten($btn_color, 10%), lighten($btn_color, 20%));		
+			}
+			&:active{
+			transform: translate(2px,2px);
+			box-shadow: 0 0 0 0;
+			}
 		}
 	}
 	.justifier{
@@ -124,8 +132,8 @@ main{
 			display:inline-block;
 			color:$hello_fnt;
 			h2{
-			font-size:40px;
-			margin:0;
+				font-size:40px;
+				margin:0;
 			}
 			p{
 			font-size:12px;

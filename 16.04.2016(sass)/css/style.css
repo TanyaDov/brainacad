@@ -1,0 +1,155 @@
+/* line 8, ../sass/_mainstyle.scss */
+body {
+  background: url(../img/bck.png);
+  color: white;
+  padding: 20px;
+}
+
+/* line 14, ../sass/_mainstyle.scss */
+.cancel, .save, .reset {
+  background: rgba(0, 128, 0, 0.3);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  outline: none;
+}
+/* line 21, ../sass/_mainstyle.scss */
+.cancel:hover, .save:hover, .reset:hover {
+  background: green;
+}
+/* line 23, ../sass/_mainstyle.scss */
+.cancel:hover:active, .save:hover:active, .reset:hover:active {
+  outline: none;
+  border: none;
+}
+
+/* line 30, ../sass/_mainstyle.scss */
+.save {
+  background: green;
+}
+/* line 33, ../sass/_mainstyle.scss */
+.save:hover {
+  background: rgba(0, 128, 0, 0.8);
+}
+
+/* line 38, ../sass/_mainstyle.scss */
+.reset {
+  background: #8f6db3;
+}
+/* line 41, ../sass/_mainstyle.scss */
+.reset:hover {
+  background: rgba(143, 109, 179, 0.8);
+}
+
+/* line 76, ../sass/_mainstyle.scss */
+h1 {
+  color: green;
+  background: red;
+  border: 1px dotted blue;
+}
+
+/* line 82, ../sass/_mainstyle.scss */
+p {
+  background: rgba(0, 128, 0, 0.3);
+  width: 290px;
+  border-color: blue;
+  border-width: 1px;
+  border-style: dashed;
+  border: 2px solid blue;
+}
+
+/* line 99, ../sass/_mainstyle.scss */
+.save {
+  color: gray;
+}
+
+/* line 115, ../sass/_mainstyle.scss */
+.item-1 {
+  width: 5em;
+}
+
+/* line 115, ../sass/_mainstyle.scss */
+.item-2 {
+  width: 10em;
+}
+
+/* line 115, ../sass/_mainstyle.scss */
+.item-3 {
+  width: 15em;
+}
+
+/* line 123, ../sass/_mainstyle.scss */
+.item-6 {
+  width: 120px;
+}
+
+/* line 123, ../sass/_mainstyle.scss */
+.item-5 {
+  width: 100px;
+}
+
+/* line 123, ../sass/_mainstyle.scss */
+.item-4 {
+  width: 80px;
+}
+
+/* line 131, ../sass/_mainstyle.scss */
+.monday-icon {
+  background-image: url("../img/monday.png");
+}
+
+/* line 131, ../sass/_mainstyle.scss */
+.tuesday-icon {
+  background-image: url("../img/tuesday.png");
+}
+
+/* line 131, ../sass/_mainstyle.scss */
+.wednesday-icon {
+  background-image: url("../img/wednesday.png");
+}
+
+/* line 131, ../sass/_mainstyle.scss */
+.thursday-icon {
+  background-image: url("../img/thursday.png");
+}
+
+/* line 139, ../sass/_mainstyle.scss */
+.gray-icon {
+  background: url("../img/sprite.png") 0px 0px no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 139, ../sass/_mainstyle.scss */
+.yellow-icon {
+  background: url("../img/sprite.png") -16px 0px no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 139, ../sass/_mainstyle.scss */
+.red-icon {
+  background: url("../img/sprite.png") -32px 0px no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 139, ../sass/_mainstyle.scss */
+.green-icon {
+  background: url("../img/sprite.png") -48px 0px no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 139, ../sass/_mainstyle.scss */
+.blue-icon {
+  background: url("../img/sprite.png") -64px 0px no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
