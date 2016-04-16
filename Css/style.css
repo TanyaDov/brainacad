@@ -534,38 +534,58 @@ h2 {
   height: 51px;
 }
 
-/* line 472, ../sass/_mainstyle.scss */
-.social .facebook {
-  background: url("../img/social.png") no-repeat 0 -1px;
+/* line 475, ../sass/_mainstyle.scss */
+.facebook {
+  background: url("../img/social.png") 0px -1px no-repeat;
+}
+/* line 477, ../sass/_mainstyle.scss */
+.facebook:hover {
+  background: url("../img/social.png") 0px -51px no-repeat;
 }
 
-/* line 476, ../sass/_mainstyle.scss */
+/* line 475, ../sass/_mainstyle.scss */
+.twitter {
+  background: url("../img/social.png") -50px -1px no-repeat;
+}
+/* line 477, ../sass/_mainstyle.scss */
+.twitter:hover {
+  background: url("../img/social.png") -50px -51px no-repeat;
+}
+
+/* line 475, ../sass/_mainstyle.scss */
+.google {
+  background: url("../img/social.png") -100px -1px no-repeat;
+}
+/* line 477, ../sass/_mainstyle.scss */
+.google:hover {
+  background: url("../img/social.png") -100px -51px no-repeat;
+}
+
+/*.social .facebook {
+	background : url("../img/social.png") no-repeat 0 -1px;
+}
+
 .social .twitter {
-  background: url("../img/social.png") no-repeat -50px -1px;
+	background : url("../img/social.png") no-repeat -50px -1px;
 }
 
-/* line 480, ../sass/_mainstyle.scss */
 .social .google {
-  background: url("../img/social.png") no-repeat -100px -1px;
+	background : url("../img/social.png") no-repeat -100px -1px;
 }
 
-/* line 484, ../sass/_mainstyle.scss */
 .social .facebook:hover {
-  background: url("../img/social.png") no-repeat 0 -51px;
+	background : url("../img/social.png") no-repeat 0 -51px;
 }
 
-/* line 488, ../sass/_mainstyle.scss */
 .social .twitter:hover {
-  background: url("../img/social.png") no-repeat -50px -51px;
+	background : url("../img/social.png") no-repeat -50px -51px;
 }
 
-/* line 492, ../sass/_mainstyle.scss */
 .social .google:hover {
-  background: url("../img/social.png") no-repeat -100px -51px;
-}
-
+	background : url("../img/social.png") no-repeat -100px -51px;
+}*/
 /*-----------------------------ADMIN PANEL---------------------------*/
-/* line 499, ../sass/_mainstyle.scss */
+/* line 510, ../sass/_mainstyle.scss */
 .panel {
   position: fixed;
   top: 50%;
@@ -578,7 +598,7 @@ h2 {
   transition-duration: 0.5s;
 }
 
-/* line 511, ../sass/_mainstyle.scss */
+/* line 522, ../sass/_mainstyle.scss */
 .admin_Content {
   height: 400px;
   width: 400px;
@@ -589,35 +609,35 @@ h2 {
   box-shadow: 0px 0px 20px black;
 }
 
-/* line 521, ../sass/_mainstyle.scss */
+/* line 532, ../sass/_mainstyle.scss */
 .panel:hover {
   left: 400px;
 }
 
-/* line 526, ../sass/_mainstyle.scss */
+/* line 537, ../sass/_mainstyle.scss */
 .discount_form {
   margin: 10px;
 }
 
-/* line 530, ../sass/_mainstyle.scss */
+/* line 541, ../sass/_mainstyle.scss */
 .date {
   width: 100px;
   display: inline-block;
 }
 
-/* line 535, ../sass/_mainstyle.scss */
+/* line 546, ../sass/_mainstyle.scss */
 .discount_form .adm_button {
   width: 100%;
 }
 
-/* line 539, ../sass/_mainstyle.scss */
+/* line 550, ../sass/_mainstyle.scss */
 .discount_form legend {
   color: white;
   font-weight: bold;
 }
 
 /*--------------------------------OVERLAY------------------------------*/
-/* line 546, ../sass/_mainstyle.scss */
+/* line 557, ../sass/_mainstyle.scss */
 .overlay {
   background: url("../img/overlay.png");
   width: 100%;
@@ -629,7 +649,7 @@ h2 {
   display: none;
 }
 
-/* line 556, ../sass/_mainstyle.scss */
+/* line 567, ../sass/_mainstyle.scss */
 .overlay dialog {
   display: block;
   background: white;
@@ -642,37 +662,37 @@ h2 {
   padding: 20px;
 }
 
-/* line 568, ../sass/_mainstyle.scss */
+/* line 579, ../sass/_mainstyle.scss */
 .overlay .some_list {
   float: left;
 }
 
-/* line 573, ../sass/_mainstyle.scss */
+/* line 584, ../sass/_mainstyle.scss */
 .overlay .some_list ul {
   list-style: none;
   margin: 0;
   padding: 10px;
 }
 
-/* line 579, ../sass/_mainstyle.scss */
+/* line 590, ../sass/_mainstyle.scss */
 .overlay .some_list input[type="radio"] {
   margin: 0 10px;
 }
 
-/* line 583, ../sass/_mainstyle.scss */
+/* line 594, ../sass/_mainstyle.scss */
 .overlay .timer {
   padding: 10px;
   float: right;
 }
 
-/* line 589, ../sass/_mainstyle.scss */
+/* line 600, ../sass/_mainstyle.scss */
 .overlay span {
   font-size: 40px;
   display: inline-block;
   position: relative;
 }
 
-/* line 595, ../sass/_mainstyle.scss */
+/* line 606, ../sass/_mainstyle.scss */
 .overlay .timer .numbers {
   border: 5px outset lightgray;
   border-radius: 5px;
@@ -680,7 +700,7 @@ h2 {
   box-shadow: inset 0px 0px 15px 1px;
 }
 
-/* line 602, ../sass/_mainstyle.scss */
+/* line 613, ../sass/_mainstyle.scss */
 .overlay .timer .numbers:before {
   content: '';
   display: block;

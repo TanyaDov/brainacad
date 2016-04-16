@@ -469,7 +469,18 @@ right:15px;
 	height : 51px;
 }
 
-.social .facebook {
+$i:0;
+
+@each $sprite in facebook, twitter, google{
+	.#{$sprite} {
+		background: url("../img/social.png") #{$i}px -1px no-repeat;
+		&:hover{
+		background: url("../img/social.png") #{$i}px -51px no-repeat;}
+	}
+	$i: $i - 50;
+}
+
+/*.social .facebook {
 	background : url("../img/social.png") no-repeat 0 -1px;
 }
 
@@ -491,7 +502,7 @@ right:15px;
 
 .social .google:hover {
 	background : url("../img/social.png") no-repeat -100px -51px;
-}
+}*/
 
 /*-----------------------------ADMIN PANEL---------------------------*/
 
