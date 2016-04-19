@@ -1,0 +1,41 @@
+span[lang]{
+	font-weight : bold;
+}
+
+span[lang="pt"]{
+	color : green;
+}
+
+span[lang~="df"]{
+	color : red;
+}
+
+span[lang|="zh"]{ /* */
+	color : pink;
+}
+
+a[href^="#"]{ /*начало строки*/
+color:black;
+text-decoration:none;
+}
+
+a[href$=".cn"]{ /* конец строки*/
+color:brown;
+
+}
+
+a[href*="example"]{ /* поиск в тексте*/
+background:lightgray;
+}
+
+div[class$="box"]{
+width:50px;
+height:60px;
+background:red;
+border:5px solid green;
+padding:10px;
+}
+
+.border_box{
+box-sizing:border-box;
+}

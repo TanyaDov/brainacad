@@ -1,0 +1,33 @@
+$base-columns-amount: 16;
+
+@for $i from 1 through $base-columns-amount{
+	$minimum-column-width: 100% / $i;
+	.grd-fill-column#{$i} {
+		width: $minimum-column-width;
+	}
+}
+
+div[class^="grd-fill-column"], div[class^="grd-step-column"]{
+	background:lightgray;
+	border:1px solid red;
+
+}
+
+@for $i from 1 through $base-columns-amount {
+	$minimum-column-width: 100% / $base-columns-amount;
+	.grd-step-column#{$i} {
+		width: $minimum-column-width * $i
+	}
+}
+
+.grd-row{
+	font-size:0;
+	div[class^="grd-step-column"]{
+		display:table-cell;
+		vertical-align:middle;
+		font-size:14px;
+		padding:0 5px;
+		box-sizing:border-box;
+		
+	}
+}

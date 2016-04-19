@@ -1,0 +1,148 @@
+$color1: green;
+$color2: red;
+$color3: blue;
+$grid-width: 40px;
+$gutter-width: 10px;
+$values: $color1, $color2, $color3;
+
+body{
+	background: url(../img/bck.png);
+	color:white;
+	padding:20px;
+}
+
+.cancel{
+	background: fade-out($color1, .7);
+	color:white;
+	border:none;
+	border-radius:15px;
+	padding:10px 15px;
+	outline:none;
+	&:hover{
+		background:fade-in($color1,.9);
+	&:active{
+		outline:none;
+		border:none;
+		}
+	}
+}
+
+.save{
+	@extend .cancel;
+	background:fade-in($color1,.9);
+	&:hover{
+		background:fade-out($color1,.2);
+	}
+}
+
+.reset{
+	@extend .cancel;
+	background: mix(#7f8bff, #b32600, 70%);
+	&:hover{
+		background:fade-out(mix(#7f8bff, #b32600, 70%),.2);
+	}
+		
+}
+
+@function p-width($n){
+	@return $n * $grid-width + ($n - 1) * $gutter-width;
+}
+
+
+@mixin large-text{
+	font: {
+		family: Arial;
+		size: 20px;
+		weight: bold;
+	}
+	color:#ff0000;
+	background: fade-out($color2, .7);
+}
+
+@mixin blue-border($color, $width: 1px){
+	border:	{
+	color:$color;
+	width:$width;
+	style:dashed;
+	}
+}
+
+@mixin colors($text, $bck, $border){
+	color:$text;
+	background:$bck;
+	border: 1px dotted $border;
+}
+
+h1{
+	//@include large-text;
+	//@include blue-border($color3, 2px);
+	@include colors($values...);
+	}
+
+p{
+	background: fade-out($color1, .7);
+	width: p-width(6);
+	@include blue-border($color3);
+	@if 1 + 2 == 3 	{
+		border:2px solid $color3;
+	}
+	@if 4 < 3 {
+		color:red;
+	}
+	@if null {
+		padding: 5px;
+	}
+}
+
+$type: save;
+
+.save{
+	@if $type == cancel{
+	color: blue;
+	}
+	@else if $type == save{
+	color: gray;
+	}
+	@else if $type == delete{
+	color: red;
+	}
+	@else{
+	color:black;
+	}
+}
+
+@for $i from 1 through 3{
+	.item-#{$i} {
+	width: 5em * $i;
+	}
+}
+
+$i: 6;
+
+@while $i > 3 {
+	.item-#{$i}{
+		width: 20px * $i;
+	}
+	$i: $i - 1;
+}
+
+
+@each $week in monday, tuesday, wednesday, thursday {
+	.#{$week}-icon{
+	background-image: url("../img/#{$week}.png");
+	}
+}
+
+$i:0;
+
+@each $sprite in gray, yellow, red, green, blue {
+	.#{$sprite}-icon {
+		background: url("../img/sprite.png") #{$i}px 0px no-repeat;
+		display:inline-block;
+		width:16px;
+		height:16px;
+	}
+	$i: $i - 16;
+}
+
+
