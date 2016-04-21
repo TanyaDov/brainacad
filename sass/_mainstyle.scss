@@ -41,15 +41,19 @@ $base-columns-amount: 16;
 box-sizing:border-box
 }
 
+*:before, *:after{
+	box-sizing:inherit;
+}
+
 .pointer{
 	cursor:pointer;
 }
 
-.left{
+.f-left{
 	float:left;
 }
 
-.right{
+.f-right{
 	float:right;
 }
 
@@ -57,7 +61,7 @@ box-sizing:border-box
 	clear : both;
 }
 
-.justifier{
+.m-justifier{
 	text-align:justify;
 }
 
@@ -81,6 +85,9 @@ h2 {
 	text-align : center;
 }
 
+p{
+	margin:0;
+}
 
 .wrapper {
 	width : 768px;
@@ -120,13 +127,14 @@ header {
 		display : block;
 		text-align:right;
 		a {
+			font-size:16px;
 			display : inline-block;
 			color : $lightgray;
 			text-transform : uppercase;
 			text-decoration : none;
 			font-weight : bold;
 			padding : 20px;
-			margin-left:-4px;
+
 			transition:background-color .2s ease-in-out;
 			&:hover{
 				background : #4c4c4c;
@@ -285,12 +293,9 @@ header {
 		width : 150px;
 		height: 200px;
 		position:relative;
-		.bck{
+		.bigpic{
 			height:150px;
 			width:150px;
-			position:absolute;
-			top:0;
-			margin-top:-10px;
 		}
 		.pics{
 			margin-top:5px;
@@ -298,25 +303,9 @@ header {
 				display:inline-block;
 				width:40px;
 				height:40px;
-				position:relative;
-				margin-top:141px;
-				overflow:hidden;
-				transition:all .1s ease-in-out;
-				&:hover{
-					overflow:visible;	
-				}
 				img{
 					width:40px;
 					height:40px;
-				}
-				.big{
-					position:absolute;
-					top:-156px;
-					text-align:center;
-					img{
-						width:150px;
-						height:150px;
-					}
 				}
 			}
 			.pic1{
@@ -430,18 +419,19 @@ footer {
 	background : $lightgray;
 	color : $darkgray;
 	position : relative;
+	padding-left:40px;
 	.anchors_footer {
-		display : block;
+		font-size:0px;
 		text-align:right;
 		padding:0px;
 		a {
+			font-size:16px;
 			display : inline-block;
 			color : $darkgray;
 			text-transform : uppercase;
 			text-decoration : none;
 			font-weight : bold;
 			padding : 20px;
-			margin-left:-4px;
 			transition:background-color .2s ease-in-out, color .2s ease-in-out;;
 			&:hover {
 				background : #4c4c4c;
@@ -450,10 +440,6 @@ footer {
 		}
 	}
 	.social {
-		display:block;
-		position:absolute;
-		left: 40px;
-		top:4px;
 		a{
 			display : inline-block;
 			width : 50px;
