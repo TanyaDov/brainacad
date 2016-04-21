@@ -29,7 +29,7 @@ $base-columns-amount: 16;
 
 [class*="grd-step-column"]{
 	display:inline-block;
-	vertical-align:middle;
+	vertical-align:top;
 	font-size:14px;
 	padding:0 5px;
 }
@@ -70,6 +70,15 @@ box-sizing:border-box
     display: inline-block;
     font-size: 0;
     line-height: 0;
+}
+
+.img-mod{
+	transition:all .25s ease-in-out;
+}
+
+.img-mod:hover{
+    transform: scale(1.03, 1.03);
+    box-shadow: 0 5px 6px 0px rgba(0, 0, 0, 0.6);
 }
 
 /*----------------------------------------*/
@@ -149,6 +158,7 @@ header {
 	padding-top : 30px;
 	background : $darkgray;
 	.header2_text {
+		padding-top : 30px;
 		color : $lightgray;
 		text-transform : uppercase;
 		font-size:16px;
@@ -166,10 +176,14 @@ header {
 		border-top:2px solid $darkgray;
 		padding-top:15px;
 		.arrow {
+			transition:all .25s ease-in-out;
 			position : absolute;
 			display : block;
 			text-decoration : none;
 			text-align : center;
+			&:hover{
+				transform: scale(1.05, 1.05);
+			}
 			&:nth-child(1){
 				left:15px;
 			}
@@ -183,7 +197,9 @@ header {
 		.slide {
 			display : inline-block;
 			.item{
+				width:130px;
 				text-decoration : none;
+				vertical-align:top;
 				text-align : center;
 				display:inline-block;
 				margin : 5px;
@@ -194,13 +210,14 @@ header {
 					color : $darkgray;
 					font-size:12px;
 					font-weight:bold;
-					margin-top:3px;
+					margin-top:5px;
 				}
 			}
 		}
 	}
 	.pagination {
 		text-align : center;
+		cursor: default;
 		.item {
 			display : inline-block;
 			background : url("../img/sprite21.png") no-repeat -129px -241px;
