@@ -4,13 +4,12 @@
 	<head>
 		<title>My project!</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
 	<body>
 		<div class="wrapper">
-			<div id="header" class="header">
+			<header id="header">
 				<a class="logo" href=#>
 					<img  src="img/logo.png" alt="logo" title="My image">
 				</a>
@@ -21,9 +20,9 @@
 					<a href="#contact">contacts</a>
 				</div>
 				<div class="clearfix"></div>
-			</div>
-			<div id="header2" class="promo header2">
-				<div class="header2_text">
+			</header>
+			<section id="header2" class="promo header2 grd-row">
+				<div class="header2_text grd-step-column8">
 					<p class="justifier">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
 					</p>
@@ -31,15 +30,15 @@
 					Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
 					</p>
 				</div>
-				<img class="right" src="img/stuff.png" alt="sport stuff" title="sport stuff">
+				<img class="grd-step-column8" src="img/stuff.png" alt="sport stuff" title="sport stuff">
 				<div class="clearfix"></div>
-			</div>
-			<div id="slider" class="promo slider">
+			</section>
+			<section id="slider" class="promo slider">
 				<h2>Slider</h2>
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
-				<div class="slider_container">
+				<div class="slider_container grd-row">
 					<span class="arrow pointer">
 					<img src="img/l.png" alt="arrow" title="Scroll left">
 					</span>
@@ -47,26 +46,26 @@
 					<img src="img/r.png" alt="arrow" title="Scroll right">
 					</span>
 					<div class="slide">
-						<a class="item" href=#>
+						<figure class="item pointer">
 						<img src="img/14.jpg" alt="stuff1" title="stuff1">
 						<br>
-						<span class="label">LOREM IPSUM</span>
-						</a>
-						<a class="item" href=#>
+						<figcaption class="label">LOREM IPSUM</figcaption>
+						</figure>
+						<figure class="item pointer">
 						<img src="img/15.jpg" alt="stuff1" title="stuff1">
 						<br>
-						<span class="label">LOREM IPSUM</span>
-						</a>
-						<a class="item" href=#>
+						<figcaption class="label">LOREM IPSUM</figcaption>
+						</figure>
+						<figure class="item pointer">
 						<img src="img/16.jpg" alt="stuff1" title="stuff1">
 						<br>
-						<span class="label">LOREM IPSUM</span>
-						</a>
-						<a class="item" href=#>
+						<figcaption class="label">LOREM IPSUM</figcaption>
+						</figure>
+						<figure class="item pointer">
 						<img src="img/17.jpg" alt="stuff1" title="stuff1">
 						<br>
-						<span class="label">LOREM IPSUM</span>
-						</a>
+						<figcaption class="label">LOREM IPSUM</figcaption>
+						</figure>
 						<div class="clearfix"></div>
 					</div>
 				</div>
@@ -76,8 +75,8 @@
 					<span class="item pointer"></span>
 				</div>
 	
-			</div>
-			<div id="catalog" class="promo catalog">
+			</section>
+			<section id="catalog" class="promo catalog">
 				<h2>Catalog</h2>
 				<div class="catalog_table">
 					<table>
@@ -143,8 +142,8 @@
 					<span class="pointer">5</span>
 				</div>
 
-			</div>
-			<div id="info" class="promo info">
+			</section>
+			<section id="info" class="promo info">
 				<h2>About Us</h2>
 				<img src="img/aboutUs_1.png" alt="about_us" class="leftimg left">
 				<p>
@@ -179,8 +178,8 @@
 					Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 				</p>
 				<div class="clearfix"></div>
-			</div>
-			<div id="contact" class="promo contact">
+			</section>
+			<section id="contact" class="promo contact">
 				<h2>Contact Us</h2>
 				<div class="contact_form">
 					<div class="form_container">
@@ -208,7 +207,7 @@
 								<textarea rows=4 placeholder=" Введите сообщение"></textarea>
 								<div class="captcha">
 									<p>Введите капчу и нажмите отправить.</p>
-									<label>9+18=<input type="text"></label>
+									<label><s>9+<em>18</em></s>=<input type="text"></label>
 								</div>
 								<div class="buttons_container">
 									<input type="reset" value="Сбросить">
@@ -220,8 +219,8 @@
 				</div>
 				<img class="contact_image" src="img/aboutUs_3.png" alt="Contact Us">
 				<div class="clearfix"></div>
-			</div>
-			<div class="footer">
+			</section>
+			<footer id="footer">
 				<div class="anchors_footer">
 					<a href="#slider">slider</a>
 					<a href="#catalog">catalog</a>
@@ -233,7 +232,7 @@
 					<a class="twitter" href="#footer"></a>
 					<a class="google" href="#footer"></a>
 				</div>
-			</div>
+			</footer>
 		</div>
 		<div class="panel">
 			
