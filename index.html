@@ -46,19 +46,19 @@
 					<img src="img/r.png" alt="arrow" title="Scroll right">
 					</span>
 					<div class="slide">
-						<figure class="item pointer" onclick="document.getElementById('overlay').style.display='block';">
+						<figure class="item pointer" onclick="document.getElementById('overlay').style.display='block'; document.getElementById('overlay-pic').src='img/14.jpg'">
 							<img class="img-mod" src="img/14.jpg" alt="stuff1" title="stuff1">
 							<figcaption>LOREM IPSUM</figcaption>
 						</figure>
-						<figure class="item pointer" onclick="document.getElementById('overlay').style.display='block';">
+						<figure class="item pointer" onclick="document.getElementById('overlay').style.display='block'; document.getElementById('overlay-pic').src='img/15.jpg'">
 							<img class="img-mod" src="img/15.jpg" alt="stuff1" title="stuff1">
 							<figcaption>LOREM IPSUM</figcaption>
 						</figure>
-						<figure class="item pointer" onclick="document.getElementById('overlay').style.display='block';">
+						<figure class="item pointer" onclick="document.getElementById('overlay').style.display='block'; document.getElementById('overlay-pic').src='img/16.jpg'">
 							<img class="img-mod" src="img/16.jpg" alt="stuff1" title="stuff1">
 							<figcaption>LOREM IPSUM</figcaption>
 						</figure>
-						<figure class="item pointer" onclick="document.getElementById('overlay').style.display='block';">
+						<figure class="item pointer" onclick="document.getElementById('overlay').style.display='block'; document.getElementById('overlay-pic').src='img/17.jpg'">
 							<img class="img-mod" src="img/17.jpg" alt="stuff1" title="stuff1">
 							<figcaption>LOREM IPSUM</figcaption>
 						</figure>
@@ -147,23 +147,23 @@
 					Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
 				</p>
 				<div class="rightimg f-right">
-					<img class="img-mod bigpic pointer" src="img/04.jpg" alt="about_us">
+					<img id="bigpic" class="img-mod bigpic pointer" src="img/04.jpg" alt="about_us">
 					<div class="pics m-justifier">
 						<div class="pic1">
-							<img class="img-mod pointer" src="img/01.jpg" alt="about_us">
+							<img class="pointer" src="img/01.jpg" alt="about_us" onclick="document.getElementById('bigpic').src='img/01.jpg'">
 						</div>
 						<div class="pic2">
-							<img class="img-mod pointer" src="img/02.jpg" alt="about_us">
+							<img class="pointer" src="img/02.jpg" alt="about_us" onclick="document.getElementById('bigpic').src='img/02.jpg'">
 						</div>
 						<div class="pic3">
-							<img class="img-mod pointer" src="img/03.jpg" alt="about_us">
+							<img class="pointer" src="img/03.jpg" alt="about_us" onclick="document.getElementById('bigpic').src='img/03.jpg'">
 						</div>
 						<span class="stretch"></span>
 					</div>
 					
 				</div>
 				<p>
-					Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 				</p>
 				<div class="clearfix"></div>
 			</section>
@@ -251,7 +251,7 @@
 				<path d="M 3 23 l 20 -20" stroke="black" stroke-width="3" fill="none" />
 				<path d="M 3 3 l 20 20" stroke="black" stroke-width="3" fill="none" />
 			</svg>
-			<img src="img/03.jpg" alt="about_us" class="leftimg f-left">
+			<img id="overlay-pic" src="img/03.jpg" alt="about_us" class="leftimg f-left">
 			Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
 			Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 			<div class="clearfix"></div>
