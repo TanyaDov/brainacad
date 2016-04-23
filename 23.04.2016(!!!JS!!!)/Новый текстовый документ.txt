@@ -1,0 +1,119 @@
+/*
+console.log('hello');
+console.warn('hello');
+console.error('hello');
+
+console.dir({one:1, two:{three:3}});
+
+var a;
+console.log(a);
+
+var a="asdsad";
+var b=0;
+console.log(a/b);
+
+var str='5cats';
+console.log(Number(str)); строка в число, но в данном случае NaN
+console.log(str);
+
+var str='51,123cats';
+console.log(parseFloat(str));
+console.log(str);
+
+var str='5';
+var nmb=2;
+console.log(+str+nmb);
+
+
+var str='Hello';
+var str2='world';
+console.log(str+' '+str2);
+
+var $, _; //2 переменные xD
+
+var n1 = 1;
+var n2 = 2;
+n1 = n1 + n2;
+console.log(n1);
+n1 += n2;
+console.log(n1);
+n1 /= n2;
+console.log(n1);
+console.log(parseInt(n1));
+
+
+var n1 = 1;
+var n2 = 2;
+n1 = n1 + n2;
+console.log(n1);
+n1 += n2;
+console.log(n1);
+console.log(n1 % n2);
+
+var n1 = 1;
+console.log(n1++);
+console.log(++n1);
+console.log(--n1);
+
+var n1 = 1;
+var n2 = 5;
+console.log(n1 > n2);
+console.log(n1 < n2);
+
+var n1 = 'asdasd';
+var n2 = 'sadasdasd';
+console.log(n1.length, n2.length);
+
+var n1 = 5;
+var n2 = '5';
+console.log(n1 == n2);
+console.log(n1 === n2);
+
+var num1 = 5;
+var num2 = 6;
+var res = (num1 == num2)? 'equal' : 'not equal';
+console.log(res);
+
+console.log(Math.random());
+console.log(Math.floor(2.666));
+console.log(Math.round(3.666));
+console.log(Math.ceil(5.1));
+
+console.log(Math.floor(Math.random() * 1000));
+console.log(Math.pow(2,3));
+
+var a = prompt('¬ведите целое a:');
+a = parseFloat(a);
+console.log(a);
+if (isNaN(a)){
+  alert('¬ведите число а не строку');
+}
+else if(a / parseInt(a) !== 0){
+  alert('„исло а не целое.');
+}
+else if (a % 2 === 0){
+  alert('„исло а чЄтное.');
+}
+else{
+  alert('„исло а нечЄтное.');
+}
+
+
+var a = 'cat';
+switch(a){
+  case 'cat': {
+    console.log('cat');
+    break;
+  }
+  case 'dog': {
+    console.log('dog');
+    break;
+  }
+  default: {
+    console.log('default statement');
+  }
+}
+
+
+
+*/
